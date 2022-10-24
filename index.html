@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style/style.css">
+   <script src="https://kit.fontawesome.com/bb3c7a99a0.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body class="page">
+   <header id="header">
+      <div class="container header__container">
+         <a href="#" class="logo header__logo"><i class="fa-solid fa-cat header__logo-icon"></i>Котята</a>
+         <h1>Сайт по котятам</h1>
+         <div class="header__top-wrapper">
+            <button class="btn-add btn btn-button" id="add"><i class="fa-solid fa-plus"></i>Add</button>
+            <button class="btn-add btn btn-button" id="edit" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-add btn btn-button" id="find" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn-add btn btn-button" id="del" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-trash"></i></button>
+         </div>
+      </div>
+   </header>
+
+<!-- main -->
+   <main class="main">
+      <section class="cards container cards__wrapper">
+               <h2 class="visually-hidden">Список наших котят</h2>
+               <!-- тут будет карточка с котенком из template -->
+      </section>
+
+      /<!-- popup -->
+   </main>
+
+<!-- footer -->
+   <footer id="footer">
+      footer
+   </footer>
+
+   <!-- popup -->
+   <div class="popup popup-add">
+      <div class="popup__container">
+         <h2>Добавить котенка</h2>
+         <button class="btn btn-circle popup__close"><i class="fa-solid fa-circle-xmark icons  icons-like"></i></button>
+         <form class="form" id="popup__form-all">
+            <div class="form__image"></div>
+            <input type="number" class="form__input" name="id" min="1" required placeholder="id">
+            <input type="number" class="form__input" name="age" placeholder="Возраст котенка">
+            <input type="text" class="form__input" name="name" required placeholder="Имя">
+            <input type="number" class="form__input" name="rate" placeholder="Рейтинг от 0 до 10" min="0" max="10">
+            <textarea name="description" class="form__input form__textarea" placeholder="Описание"></textarea>
+            <label class="form__checkbox-wrapper">
+                <input type="checkbox" name="favourite" class="form__checkbox">
+                <span class="form__checkbox-text">Любимчик</span>  
+            </label>
+
+            <input type="url" class="form__input form__input-link" name="img_link" placeholder="Ссылка на фото">
+            <button type="submit" class="btn form__btn">Добавить котенка</button>
+        </form>
+      </div>
+   </div>
+
+   <!-- template card -->
+   <template id="card-template">
+      <!-- на странице не показывается -->
+      <div class="card">
+         <img src="#" alt="" class="card__img">
+         <a href="#" class="card__link"><h3 class="card__name">Имя котенка</h3><h4 class="card__id">id записи</h4></a>
+         <button class="card__like btn btn-circle"><i class="fa-solid fa-thumbs-up icons icons-like"></i></button>
+      </div>
+   </template>
+
+   <!-- scripts -->
+   <script src="js/cats.js" defer></script>
+   <script src="js/api.js" defer></script>
+   <script src="js/card.js" defer></script>
+   <script src="js/popup.js" defer></script>
+   <script src="js/index.js" defer></script>
+</body>
+</html>

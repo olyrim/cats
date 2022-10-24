@@ -1,0 +1,31 @@
+.form {
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.form__image {
+   grid-row: span 3;
+   background: url("../img/bg_img.jpg") top center / cover no-repeat;
+}
+
+.form__textarea {
+   grid-row: span 2;
+   resize: none;
+   height: 100%;
+}
+
+.form__btn {
+   font-size: 14px;
+   width: 100%;
+   background: rgb(209, 209, 209);
+}
+
+.form__input {
+   outline: none;
+   width: 100%;
+   box-sizing: border-box;
+   border-radius: 4px;
+   padding: 8px 8px;
+}

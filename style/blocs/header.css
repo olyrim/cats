@@ -1,0 +1,16 @@
+#header {
+   padding: 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: rgb(245, 245, 245);
+}
+.header__container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.header__top-wrapper {
+   display: flex;
+   gap:10px;
+}

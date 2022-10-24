@@ -1,0 +1,14 @@
+.logo {
+   /* border: 1px solid #000; */
+   padding: 15px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+.header__logo {
+   font-size: 25px;
+}
+.header__logo-icon {
+   font-size: 45px;
+}

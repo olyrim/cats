@@ -1,0 +1,15 @@
+@import url("./initial/initial.css");
+@import url("./initial/vars.css");
+
+@import url("./blocs/container.css");
+@import url("./blocs/icons.css");
+@import url("./blocs/form.css");
+@import url("./blocs/main.css");
+@import url("./blocs/page.css");
+@import url("./blocs/logo.css");
+@import url("./blocs/button.css");
+@import url("./blocs/header.css");
+@import url("./blocs/card.css");
+@import url("./blocs/cards.css");
+@import url("./blocs/popup.css");
+@import url("./blocs/footer.css");
