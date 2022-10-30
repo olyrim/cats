@@ -30,7 +30,7 @@
 //     http://sb-cats.herokuapp.com/api/2/<name>/delete/<id кота>
 
 const CONFIG_API = {
-   url: 'http://sb-cats.herokuapp.com/api/2/olgaromanova',
+   url: 'https://sb-cats.herokuapp.com/api/2/olgaromanova',
    headers: {
        'Content-type': 'application/json'
    }
