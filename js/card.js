@@ -1,4 +1,4 @@
-class Card {
+export class Card {
    constructor(data, idTemplateInHTML) {
       this._data = data; // тут элемент массива
       this._idTemplateInHTML = idTemplateInHTML;

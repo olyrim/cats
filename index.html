@@ -5,8 +5,11 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style/style.css">
+   <!-- fontawesome -->
    <script src="https://kit.fontawesome.com/bb3c7a99a0.js" crossorigin="anonymous"></script>
-   <title>Document</title>
+   <!-- что бы работать с библиотекой куков -->
+   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" defer></script>
+   <title>Котята</title>
 </head>
 <body class="page">
    <header id="header">
@@ -14,10 +17,12 @@
          <a href="#" class="logo header__logo"><i class="fa-solid fa-cat header__logo-icon"></i>Котята</a>
          <h1>Сайт по котятам</h1>
          <div class="header__top-wrapper">
+            <button class="btn-add btn btn-button" id="removeItemLocalStorage">Очистить лок.хранилище</button>
             <button class="btn-add btn btn-button" id="add"><i class="fa-solid fa-plus"></i>Add</button>
-            <button class="btn-add btn btn-button" id="edit" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-pen-to-square"></i></button>
+            <!-- <button class="btn-add btn btn-button" id="edit" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-pen-to-square"></i></button>
             <button class="btn-add btn btn-button" id="find" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="btn-add btn btn-button" id="del" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-trash"></i></button>
+            <button class="btn-add btn btn-button" id="del" title="Будет сделана в след. ДЗ"><i class="fa-solid fa-trash"></i></button> -->
+            <button class="btn-add btn btn-button" id="login">Login</button>
          </div>
       </div>
    </header>
@@ -37,7 +42,7 @@
       footer
    </footer>
 
-   <!-- popup -->
+   <!-- popup добавления котиков -->
    <div class="popup popup-add">
       <div class="popup__container">
          <h2>Добавить котенка</h2>
@@ -60,6 +65,19 @@
       </div>
    </div>
 
+      <!-- popup авторизации -->
+      <div class="popup popup-login">
+         <div class="popup__container">
+            <h2>Авторизация</h2>
+            <button class="btn btn-circle popup__close"><i class="fa-solid fa-circle-xmark icons  icons-like"></i></button>
+            <form class="form" id="popup__form-login">
+               <input type="email" class="form__input" name="email" min="1" required placeholder="login">
+               <input type="password" class="form__input" name="pass" placeholder="password">
+               <button type="submit" class="btn form__btn">Авторизация</button>
+           </form>
+         </div>
+      </div>
+
    <!-- template card -->
    <template id="card-template">
       <!-- на странице не показывается -->
@@ -71,10 +89,10 @@
    </template>
 
    <!-- scripts -->
-   <script src="js/cats.js" defer></script>
+   <!-- <script src="js/cats.js" defer></script>
    <script src="js/api.js" defer></script>
    <script src="js/card.js" defer></script>
-   <script src="js/popup.js" defer></script>
-   <script src="js/index.js" defer></script>
+   <script src="js/popup.js" defer></script> -->
+   <script src="js/index.js" defer type="module"></script>
 </body>
 </html>
